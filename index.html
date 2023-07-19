@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Test-tasks</title>
+  </head>
+  <body>
+    <!--Task-1-->
+    <h1 class="title">Linear measure</h1>
+    <form class="form">
+      <div class="container">
+        <input
+          class="input"
+          autocomplete="off"
+          id="distance"
+          type="number"
+          placeholder=""
+          pattern="/^[0-9]+$/"
+        />
+        <select class="select" name="unit" id="unit" disabled></select>
+      </div>
+      <span class="legend">converted to</span>
+      <div class="container">
+        <input class="input" id="convert_distance" disabled />
+        <select
+          class="select"
+          name="convert_unit"
+          id="convert_unit"
+          disabled
+        ></select>
+      </div>
+    </form>
+    <!--Task-2-->
+    <section class="section" id="section">
+      <div class="button_container">
+      <button class="button" type="button" id="filter">Filter</button>
+      <button class="button" type="button" id="reset">Reset</button></div>
+    </section>
+
+    <script src="./task1/script.js" type="module"></script>
+    <script src="./task2/script.js" type="module"></script>
+    <script src="./task3/script.js" type="module"></script>
+  </body>
+</html>
